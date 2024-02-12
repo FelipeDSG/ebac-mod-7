@@ -1,8 +1,8 @@
 document.getElementById("formulario").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    var valorA = document.getElementById("valorA").value;
-    var valorB = document.getElementById("valorB").value;
+    var valorA = parseFloat(document.getElementById("valorA").value);
+    var valorB = parseFloat(document.getElementById("valorB").value);
 
     if (valorB > valorA) {
         document.getElementById("verdadeiro").style.display = "block";
